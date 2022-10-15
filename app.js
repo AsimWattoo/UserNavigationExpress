@@ -6,6 +6,8 @@ var logger = require('morgan');
 
 let indexRouter = require('./routes/index');
 let registerRouter = require('./routes/registerRouter');
+let adminRouter = require('./routes/Admin');
+let authenticationRouter = require('./routes/Authentication');
 
 let app = express();
 
@@ -21,9 +23,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/login', indexRouter);
 app.use("/signup", registerRouter);
-// app.use("/admin/view", adminRouter);
-// app.use('/clock', clockRouter);
-// app.use('/2fa', authenticationRouter);
+app.use("/admin", adminRouter);
+app.use('/authentication', authenticationRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
