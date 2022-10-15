@@ -6,3 +6,8 @@ body {
 a {
   color: #00B7FF;
 }
+
+.bg-red{
+  background-color: red;
+  color: white;
+}
