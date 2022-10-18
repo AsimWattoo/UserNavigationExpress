@@ -7,13 +7,11 @@ router.get('/clock', (req, res) => {
 });
 
 router.get("/2fa", (req, res) => {
-   res.write("Two Factor Authentication Code");
-   res.end();
+   res.render('2fa');
 });
 
 router.get("/sms", (req, res) => {
-   res.write("SMS Page");
-   res.end();
+   res.render('sms');
 });
 
 module.exports = router;
