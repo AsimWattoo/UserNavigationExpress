@@ -1,9 +1,9 @@
 extends layout
 
 block content
-    .container
+    .container.full-screen.d-flex.justify-content-center.align-items-center
         #form.w-100.d-flex.justify-content-center.align-items-center
-            form.col-10.shadow-lg.p-4.mb-5.bg-body.rounded
+            form(class="col-lg-6 col-md-10 col-sm-12 shadow-lg p-4 mb-5 bg-body rounded")
                 .d-grid.gap-4
                     .d-flex
                         img(src='../MS%20Logo.jpg', style='height: 2.5rem', alt='Microsoft Logo')
@@ -15,7 +15,7 @@ block content
                     |  Please type the code displayed on your authenticator app from your device
                 .form-group
                     label(for='password')
-                    input#password(type='numeric', style='margin: 0rem')
+                    input#password(type='text', pattern='[0-9]*', style='margin: 0rem')
                 .d-grid.gap-1
                     p(style='margin-top:1rem')
                         | Having trouble?

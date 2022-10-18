@@ -1,0 +1,61 @@
+#microsoft{
+    color: grey;
+
+}
+#signin{
+    margin-top: 1rem;
+    font-weight: bold ;
+}
+#email{
+    margin-top: 2rem;
+    width: 90%;
+    border-width: 0 0 0.05rem 0;
+    border-color: royalblue;
+    margin-bottom: 5%;
+    outline: none;
+}
+#password{
+    margin-top: 2rem;
+    width: 90%;
+    border-width: 0 0 0.05rem 0;
+    border-color: darkblue;
+    margin-bottom: 5%;
+    outline: none;
+}
+a{
+    text-decoration: none;
+
+}
+.btn-secondary{
+    background-color: lightgrey;
+    color: black;
+    border: none;
+}
+#key{
+    padding-top: 10px;
+    height: 40px;
+
+}
+#option{
+    color: black;
+    background-color: white;
+    border: hidden;
+    height: 50px;
+}
+#anotherWay {
+    color: #00B7FF;
+}
+
+.bg-red{
+    background-color: red;
+    color: white;
+}
+
+.full-screen{
+    height: 100vh;
+    width: 100vw;
+}
+.full-screen{
+    width: 100vw;
+    height: 100vh;
+}
