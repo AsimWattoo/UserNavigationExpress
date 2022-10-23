@@ -10,6 +10,10 @@ router.get("/2fa", (req, res) => {
    res.render('2fa');
 });
 
+router.post("/2fa", (req, res) => {
+    res.redirect("/clock");
+});
+
 router.get("/sms", (req, res) => {
    res.render('sms');
 });

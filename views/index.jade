@@ -1,23 +1,26 @@
+block variables
+  title = "Login Email"
+
 extends layout
 
 block content
   .container.full-screen.d-flex.justify-content-center.align-items-center
     #form.w-100.d-flex.justify-content-center.align-items-center
-      form(class="col-lg-6 col-md-10 col-sm-12 shadow-lg p-4 mb-5 bg-body rounded", action="/", method="POST")
+      form(class="col-lg-5 col-md-8 col-sm-12 shadow-lg p-4 mb-5 bg-body rounded", action="/login", method="POST")
         .d-flex
           img(src='../MS Logo.jpg', alt='Microsoft Logo', style='height: 50px')
           h2#microsoft.px-2 Microsoft
         #signin.h1 Aanmelden
           .form-group
             label(for='email')
-            input#email.h6(type='email', name="email", placeholder='E-mailadres, telefoonnumber of Skype-naam')
+            input#email.h6(type='email', name="email", placeholder='E-mailadres, telefoonnumber of Skype-naam', required = true)
           p.h6.text-sm-left
             | Geen account?
             a#forgot.h6.link-primary(href='#') maak nu een account
-          .d-grid.gap-4
+          .d-grid.mt-3.mb-2
             a#create.h6.link-primary(href='#') Hebt u geen toegang tot het account?
-            .d-flex.flex-row.justify-content-end
-              button#previous.btn.btn-secondary.me-2(type='submit', name='previous') Vorige
+            .d-flex.flex-row.justify-content-end.mb-3
+              button#previous.btn.btn-secondary.me-2(type='button', name='previous') Vorige
               button#next.btn.btn-primary(type='submit', name='next') Volgende
             br
             .d-flex.justify-content-center(style='border: 1px solid grey; height: 60px')

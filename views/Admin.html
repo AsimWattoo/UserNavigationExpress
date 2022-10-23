@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0">
+    <title>U-Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="StyleSheet.css">
+</head>
+<body>
+<nav class="py-2">
+    <div class="d-flex justify-content-between container">
+        <div class="d-flex align-items-center">
+            <a href="#"><h4>U-Panel</h4></a>
+            <a class="mx-3" href="#"><h5>Token</h5></a>
+        </div>
+        <div class="d-flex align-items-center">
+            <a href="#">
+                <p class="mb-0 fw-light">Hi, <span class="fst-italic">admin</span></p>
+            </a>
+            <div class="dropdown mx-2">
+                <div class="px-3 dropdown-toggle c-pointer" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#dddddd" d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336c44.2 0 80-35.8 80-80s-35.8-80-80-80s-80 35.8-80 80s35.8 80 80 80z"/></svg>
+
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="signout ms-3 c-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 512 512"><path fill="#dddddd" d="M160 96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96C43 32 0 75 0 128V384c0 53 43 96 96 96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H96c-17.7 0-32-14.3-32-32l0-256c0-17.7 14.3-32 32-32h64zM504.5 273.4c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22v72H192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32H320v72c0 9.6 5.7 18.2 14.5 22s19 2 26-4.6l144-136z"/></svg>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-3 border-bottom">
+    <div class="d-flex justify-content-between">
+        <div class="d-flex">
+            <button disabled class="btn btn-secondary rounded-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 512 512"><path fill="#FFF" d="M3.9 54.9C10.5 40.9 24.5 32 40 32H472c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L320 320.9V448c0 12.1-6.8 23.2-17.7 28.6s-23.8 4.3-33.5-3l-64-48c-8.1-6-12.8-15.5-12.8-25.6V320.9L9 97.3C-.7 85.4-2.8 68.8 3.9 54.9z"/></svg>
+            </button>
+            <button class="btn btn-danger rounded-0">Reset all filters</button>
+            <button class="btn btn-warning rounded-0 text-light">Show Only Online</button>
+            <button class="btn btn-warning rounded-0 text-light">Show Only with Logins</button>
+            <button class="btn btn-warning rounded-0 text-light">By Link</button>
+        </div>
+        <div class="d-flex">
+            <button class="btn btn-danger rounded-0 d-flex align-items-center">
+                <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="15px" fill="#FFF" viewBox="0 0 512 512"><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                Selected
+            </button>
+            <button class="btn btn-danger rounded-0 d-flex align-items-center">
+                <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="15px" fill="#FFF" viewBox="0 0 448 512"><path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/></svg>
+                Empty
+            </button>
+            <button class="btn btn-danger rounded-0 d-flex align-items-center">
+                <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="15px" fill="#FFF" viewBox="0 0 448 512"><path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/></svg>
+                All
+            </button>
+        </div>
+    </div>
+    <button class="btn btn-success my-3 rounded-0 d-flex align-items-center">
+        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="15px" fill="#FFF" viewBox="0 0 384 512"><path d="M0 64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM336 448V160H256C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V448C48 456.8 55.16 464 64 464H320C328.8 464 336 456.8 336 448z"/></svg>
+        Export selected rows
+    </button>
+</div>
+<div class="container mt-3">
+    <table class="text-light">
+        <tr class="border">
+            <td class="border-end">Registeration</td>
+            <td>Redirect All</td>
+        </tr>
+        <tr class="border bg-secondary">
+            <td class="border-end">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="reg" checked>
+                    <label class="form-check-label" for="reg">On</label>
+                </div>
+            </td>
+            <td>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="redirect" checked>
+                    <label class="form-check-label" for="redirect">On</label>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div class="d-flex justify-content-between mt-4">
+        <input type="number" value="10" class="form-control rounded-0" style="width: 75px;">
+    </div>
+    <table class="text-light table2 mt-4">
+        <tr class="tr2">
+            <td>
+                <input class="form-check-input" type="checkbox" value="" id="checkAll">
+            </td>
+            <td>
+                Last Connected
+            </td>
+            <td>
+                UI
+            </td>
+            <td>
+                Device
+            </td>
+            <td>
+                Page ID
+            </td>
+            <td>
+                Quik Data
+            </td>
+            <td>
+                Redirect
+            </td>
+            <td>
+                Block
+            </td>
+            <td>
+                Comments
+            </td>
+            <td>
+                Operator
+            </td>
+        </tr>
+        <tr class="tr2">
+            <td>
+                <input class="form-check-input" type="checkbox" value="" id="check2">
+            </td>
+            <td>
+                10 hours ago
+            </td>
+            <td>
+                39847rhbi4u5r9848utrn4fu4n9
+            </td>
+            <td>
+                ?
+            </td>
+            <td>
+                abn_btc
+            </td>
+            <td style="line-break:anywhere;">
+                fjkdshfjksnkcvndsfndjksjfkdsjnkjdsnvjkdsnvjndskjv
+            </td>
+            <td>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="row1-rd" checked>
+                    <label class="form-check-label" for="row1-rd">On</label>
+                </div>
+            </td>
+            <td>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="row1-block" checked>
+                    <label class="form-check-label" for="row1-block">On</label>
+                </div>
+            </td>
+            <td>
+                Comments
+            </td>
+            <td>
+                -//-
+            </td>
+        </tr>
+        <tr class="tr2">
+            <td>
+                <input class="form-check-input" type="checkbox" value="" id="check3">
+            </td>
+            <td>
+                10 hours ago
+            </td>
+            <td>
+                39847rhbi4u5r9848utrn4fu4n9
+            </td>
+            <td>
+                ?
+            </td>
+            <td>
+                abn_btc
+            </td>
+            <td style="line-break:anywhere;">
+                fjkdshfjksnkcvndsfndjksjfkdsjnkjdsnvjkdsnvjndskjv
+            </td>
+            <td>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="row2-rd" checked>
+                    <label class="form-check-label" for="row2-rd">On</label>
+                </div>
+            </td>
+            <td>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="row2-block" checked>
+                    <label class="form-check-label" for="row2-block">On</label>
+                </div>
+            </td>
+            <td>
+                Comments
+            </td>
+            <td>
+                -//-
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    $(".form-check-input").click(function(){
+        // id = $(this).attr('id');
+        if($(this).is(':checked')){
+            $("label[for='" + $(this).attr('id') + "']").html("On");
+        } else {
+            $("label[for='" + $(this).attr('id') + "']").html("Off")
+        }
+    })
+</script>
+</body>
+</html>
